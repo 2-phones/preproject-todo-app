@@ -35,6 +35,12 @@
   color: white;
 }
 
+.btn {
+  width: 150px;
+  height:  30px;
+  background: skyblue;
+}
+
 .App-link {
   color: #61dafb;
 }
