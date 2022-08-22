@@ -1,3 +1,8 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-unused-vars */
+import styled from "styled-components";
+
+export const Appstyle = styled.div`
 .App {
   text-align: center;
 }
@@ -35,6 +40,12 @@
   color: white;
 }
 
+.btn {
+  width: 150px;
+  height:  30px;
+  background: skyblue;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -47,3 +58,5 @@
     transform: rotate(360deg);
   }
 }
+
+`
