@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import logo from './logo.svg';
-import './App.css';
 import { useState } from 'react';
+import { Appstyle } from './style';
 
 function App() {
   const [className, setClassName] = useState(true);
@@ -15,14 +15,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className={className ? 'App-header' : 'App-header2'}>
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={changeName}>백그라운드변경</button>
-        <button className="btn" onClick={btnCount}> counting </button>
-        <div>{counts}</div>
-      </header>
-    </div>
+    <Appstyle>
+      <div className="App">
+        <header className={className ? 'App-header' : 'App-header2'}>
+          <img src={logo} className="App-logo" alt="logo" />
+          <button onClick={changeName}>백그라운드변경</button>
+          <button className="btn" onClick={btnCount}> counting </button>
+          <div>{counts}</div>
+        </header>
+      </div>
+    </Appstyle>
   );
 }
 
