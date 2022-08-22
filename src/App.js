@@ -19,7 +19,7 @@ function App() {
       <header className={className ? 'App-header' : 'App-header2'}>
         <img src={logo} className="App-logo" alt="logo" />
         <button onClick={changeName}>백그라운드변경</button>
-        <button className="btn" onClick={btnCount}> 카운팅 </button>
+        <button className="btn" onClick={btnCount}> counting </button>
         <div>{counts}</div>
       </header>
     </div>
